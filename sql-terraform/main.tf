@@ -1,8 +1,3 @@
-provider "google" {
-  project     = var.project_id
-  region      = var.region
-}
-
 resource "google_sql_database_instance" "my_sql_instance" {
   name             = var.instance_name
   database_version = var.database_version
