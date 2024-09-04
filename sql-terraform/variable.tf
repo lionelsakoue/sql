@@ -13,13 +13,13 @@ variable "region" {
 variable "instance_name" {
   description = "The name of the SQL instance."
   type        = string
-  default     = "my-sql-instance"
+  default     = "main-instance"
 }
 
 variable "database_version" {
   description = "The database version for the SQL instance."
   type        = string
-  default     = "POSTGRES_12"
+  default     = "POSTGRES_15"
 }
 
 variable "tier" {
