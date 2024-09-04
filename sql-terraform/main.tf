@@ -7,7 +7,5 @@ resource "google_sql_database_instance" "main" {
     tier = var.tier
   }
 
-  root_password {
-    password = var.root_password
-  }
+  root_password = var.root_password
 }
