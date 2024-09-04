@@ -13,12 +13,3 @@ resource "google_sql_database_instance" "my_sql_instance" {
     password = var.root_password
   }
 }
-
-output "instance_name" {
-  value = google_sql_database_instance.my_sql_instance.name
-}
-
-output "instance_region" {
-  value = google_sql_database_instance.my_sql_instance.region
-}
-
