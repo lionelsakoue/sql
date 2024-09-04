@@ -1,8 +1,15 @@
 terraform {
-  required_version = ">= 1.0.0"
+  required_version = ">= 1.0"
+
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 3.5"
+    }
+  }
 }
 
 provider "google" {
-  version = "~> 3.5"  # Adjust the version based on compatibility with Terraform and your requirements
+  project     = "var.project_id"
+  region      = "var.region"
 }
-
